@@ -140,8 +140,8 @@ class NotificationsHandler(Handler, CurrentSongHandler):
                 icon = "media-playback-stop"
 
         with self.notification_lock:
-            self.notification.update(title, body, icon)
-            self.notification.show()
+             self.notification.update(title, body, icon)
+             self.notification.show()
 
         if body:
             FetchAndUpdateCoverIcon(self.notification,
